@@ -1,11 +1,11 @@
-import React from 'react';
-import { StaticRouter } from 'react-router-dom';
-import App from './App';
-
-export function render(url) {
+import React from "react";
+import { StaticRouter } from "react-router-dom";
+import App from "./App";
+import Articles from "./pages/Articles";
+export function render(url, articles) {
   return (
     <StaticRouter location={url}>
-      <App />
+      <App articles={articles} />
     </StaticRouter>
   );
 }
